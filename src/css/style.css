@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Segoe UI, Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: black;
+  border-bottom: 1px solid #2b2b2b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box; /* evita vazamento lateral */
+  overflow-x: hidden;      /* impede rolagem lateral */
+}
+
+
+.menu-navegacao ul {
+    color: #a0a0a0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu-navegacao a {
+    transition: .35s;
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+    padding: 5px 10px;
+}
+
+.menu-navegacao a:hover {
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100vh;
+    padding: 0 80px;
+    width: 100%; /* ocupa toda a largura da tela */
+    max-width: none; /* remove a limitação */
+    box-sizing: border-box;
+    transform: translateY(-60px);
+}
+
+.content-sobre {
+    flex: 1;
+    max-width: 600px; /* limita só o texto, não a seção inteira */
+    text-align: left;
+}
+
+.sobre p {
+    color: #a0a0a0;
+    text-align: justify;
+}
+
+.botao-curriculo {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.botao-curriculo:hover {
+    opacity: .8;
+    transform: scale(1.025);
+}
+
+.links-sobre {
+  display: flex;
+  gap: 10px;          
+  margin-top: 10px;  
+}
+
+.links-sobre a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;  
+  transition: color 0.2s ease;
+}
+
+.links-sobre a:hover {
+  color: #333;     
+}
+
+.imagem img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
