@@ -6,6 +6,7 @@ body {
 }
 
 .cabecalho {
+  font-family: ui-sans-serif, system-ui, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,41 +116,58 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 0 80px;
-    width: 100%; /* ocupa toda a largura da tela */
-    max-width: none; /* remove a limitação */
+    width: 100%;
+    max-width: none;
     box-sizing: border-box;
     transform: translateY(-60px);
     background-color: #090909;
     padding-top: 40px;
 }
 
+.content-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content-skills h2 {
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
 .content-skills p {
     color: #a0a0a0;
     text-align: center;
-    font-size: 14px;
-}
-
-.content-skills {
-    flex: 1;
-    max-width: 700px; /* limita só o texto, não a seção inteira */
-    text-align: center;    
+    font-size: 14px;  
+    max-width: 800px; 
+    margin-bottom: 30px; 
 }
 
 .skills-card {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 20px;             
+    width: 100%;
 }
 
 .card {
-  width: 300px; /* Defina uma largura para os cards */
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #090908;
-  border: 1px solid gray;
-  text-align: center;
-  transition: transform 0.2s ease-in-out; /* Efeito de transição suave */
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #111111;
+    border: 1px solid gray;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skills-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skills-card ul {
@@ -157,12 +175,25 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 10px;
     font-size: 14px;
+    flex-wrap: wrap;
 }
 
 .skills-card h2 {
     margin-top: 0;
     font-size: 14px;
     text-align: left;
+}
+
+.badge {
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    background-color: #313131;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 10px;
+    text-align: center;
 }
