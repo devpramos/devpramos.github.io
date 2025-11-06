@@ -17,11 +17,9 @@
 <body>
 
     <header class="cabecalho">
-
         <div class="nome-esquerda">
             <span>Pedro Ramos</span>
         </div>
-
         <nav class="menu-navegacao">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -33,8 +31,8 @@
         </nav>
     </header>
 
-    <section id="home">
-        <div class="sobre">
+    <main id="home">
+        <article class="sobre">
             <div class="content-sobre">
                 <h1>Olá, sou o <br> Pedro Ramos!</h1>
                 <p>Estou cursando Análise e Desenvolvimento de Sistemas na PUC Minas, com expectativa de conclusão em
@@ -57,15 +55,47 @@
                     </a>
                 </div>
             </div>
-
-            <div class="imagem">
+            <figure class="imagem">
                 <img src="assets/pedro-foto.png" alt="Foto Pedro Ramos">
+            </figure>
+        </article>
+    </main>
+
+    <section id="skills">
+        <div class="habilidades">
+            <div class="content-skills">
+                <h2><strong>Habilidades Técnicas</strong> </h2>
+                <p>Conhecimento em desenvolvimento web (HTML, CSS, JavaScript), programação (C#) e fundamentos de banco
+                    de dados (SQL). Familiarizado com engenharia de software, da análise de requisitos à modelagem UML,
+                    e com metodologias ágeis como Scrum e Kanban. Em constante aprendizado sobre arquitetura de
+                    aplicações.
+                </p>
+                <div class="skills-card">
+                    <div class="card">
+                        <h2><i class="bi bi-code"></i> Linguagens de programação</h2>
+                        <ul>
+                            <li><span class="badge">C#</span></li>
+                            <li><span class="badge">JavaScript</span></li>
+                            <li><span class="badge">SQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2><i class="bi bi-diagram-3"></i> Engenharia de Software</h2>
+                        <ul>
+                            <li><span class="badge">Análise de Requisitos</span></li>
+                            <li><span class="badge">Modelagem UML</span></li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2><i class="bi bi-list-task"></i> Metodologias</h2>
+                        <ul>
+                            <li><span class="badge">Scrum</span></li>
+                            <li><span class="badge">Waterfall</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-        </div>
-
     </section>
-
 </body>
 
 </html>
