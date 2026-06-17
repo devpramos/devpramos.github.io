@@ -4,7 +4,7 @@ const projectsData = [
     description:
       "Evolução de aplicativo offline-first com sistema autônomo de captura de coordenadas GPS em tempo real. Criação de identidade digital geográfica para mais de 600 equipamentos industriais, implementação de métricas de Location Accuracy e estruturação de base de dados para integração GIS.",
     image: "assets/georef.png",
-    tags: ["Gestão de Ativos", "Inteligência Geográfica", "Gestão de Ativos"],
+    tags: ["Gestão de Ativos", "Inteligência Geográfica", "Dados Geoespaciais"],
     link: "https://www.linkedin.com/posts/pramos1_desenvolvimentosolo-fullstack-indaeqstria40-ugcPost-7438664591502639104-M4hP/",
     icon: "linkedin",
     type: "Engenharia de Dados",
